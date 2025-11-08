@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mem-safe"
+version = "0.1.0"
+description = "Memory-Efficient Long-Context Processing for LLMs"
+readme = "README.md"
+authors = [{name = "Hari Tedjamantri", email = "haryganteng06@gmail.com"}]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+keywords = ["llm", "long context", "memory safe", "chunking", "checkpointing"]
+requires-python = ">=3.8"
+dependencies = ["torch>=1.13.0", "transformers>=4.30.0"]
+
+[project.urls]
+Homepage = "https://github.com/ebc-clip/mem-safe"
+Repository = "https://github.com/ebc-clip/mem-safe"
+
+[project.optional-dependencies]
+dev = ["pytest", "black", "isort"]
